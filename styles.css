@@ -1,0 +1,28 @@
+
+h1{
+    color:rgb(103, 212, 20);
+    font-size: 100px;
+}
+
+.row1{
+
+}
+.container-fluid{
+    overflow: hidden;
+}
+/* column 1 */
+.col-sm-6.col-md-6.col-lg-6 {
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.videoBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}

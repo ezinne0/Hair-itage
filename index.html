@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hair-itage</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
   </head>
+
   <body>
-    <h1>bello</h1>
-    <video autoplay muted loop id="videoBackground">
-      <source src="images/videoBackground.mp4" type="video/mp4">
-    </video>
-
-
-    <p>something fun is coming heehhehehhe</p>
-
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technogists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-    <script src="scripts/main.js"></script>
+    <!-- bootstrap container (-fluid makes container fullscreen) -->
+    <div class="container-fluid">
+      <div class="row1">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <video class="videoBG" autoplay muted loop>
+            <source src="assets/videoBackground.mp4" type="video/mp4">
+          </video>
+          <h1>Hair-itage!</h1>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">Column 2</div>
+      </div>
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- code for popovers, dropdown menus, and tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
 </html>
