@@ -1,28 +1,33 @@
-
-h1{
-    color:rgb(103, 212, 20);
-    font-size: 100px;
+body{
+    background-color: #dedbd3;
 }
 
-.row1{
-
-}
 .container-fluid{
     overflow: hidden;
 }
-/* column 1 */
-.col-sm-6.col-md-6.col-lg-6 {
-    position: relative;
-    min-height: 100vh;
-    
+/* From this point on, all class or id name written in camel case denote a class that
+covers more than one element. If written with a dash, it is only one element */
+
+#main-title{
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 20vw; /* size is responsive to screen size */
+    text-align: center;
 }
 
-.videoBG{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding-bottom: 30px;
 }
+
+.copyright-label{
+    text-align: center;
+}
+
+
+
