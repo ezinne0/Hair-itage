@@ -1,3 +1,7 @@
+/* Author: Ezinne Okonkwo
+Last Updated: 4/3/24
+Hello source peeker :D */
+
 body{
     background-color: #dedbd3;
 }
@@ -11,19 +15,53 @@ covers more than one element. If written with a dash, it is only one element */
 #main-title{
     color: #303e14;
     font-family: "DM Serif Display", serif;
-    font-weight: 1000;
+    font-weight: 800;
     font-style: normal;
-    font-size: 20vw; /* size is responsive to screen size */
+    font-size: 16vw; /* size is responsive to screen size */
     text-align: center;
+    padding-top: 25px;
 }
+
+#animatedText {
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 20;
+    font-style:italic;
+    font-size: 3vw;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    padding-top: 25px; padding-bottom: 35px;;
+  }
 
 .buttonContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     padding-bottom: 30px;
 }
+
+.button{
+    color:#303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 20;
+    font-style:normal;
+    font-size: 1.5vw;
+    display: block;
+    text-decoration: none;
+    background-color: #dedbd3;
+    border: 2px solid #303e14;
+    border-radius: 30px;
+    transition: background-color 0.5s, color 0.5s; /* how long it takes colors to change+revert when hovered over*/
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.button:hover {
+    background-color: #303e14;
+    color: #dedbd3; 
+  }
 
 .copyright-label{
     text-align: center;

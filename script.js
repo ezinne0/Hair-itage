@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const phrases = ["Progress Building Resources", "An automated toolkit for social justice.", "Reducing barriers to entry for activism."];
+    console.log("DOMContentLoaded event fired");
+    const phrases = ["Celebrating Black culture.", "Understanding our hair's history.", "Learning about our roots."];
     let currentIndex = 0;
   
-    const animatedText = document.getElementById('animated-text');
+    const animatedText = document.getElementById('animatedText');
   
     setInterval(() => {
       // Fade out and change the text
