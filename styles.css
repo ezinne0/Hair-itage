@@ -1,6 +1,17 @@
 /* Author: Ezinne Okonkwo
-Last Updated: 4/3/24
+Last Updated: 4/8/24
 Hello source peeker :D */
+#homeLogo{
+    cursor: pointer;
+    width: 11%;
+}
+
+#menu{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    height: 7%;
+}
 
 body{
     background-color: #dedbd3;
@@ -17,9 +28,8 @@ covers more than one element. If written with a dash, it is only one element */
     font-family: "DM Serif Display", serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 16vw; /* size is responsive to screen size */
+    font-size: 13vw; /* size is responsive to screen size */
     text-align: center;
-    padding-top: 25px;
 }
 
 #animatedText {
@@ -31,7 +41,7 @@ covers more than one element. If written with a dash, it is only one element */
     text-align: center;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    padding-top: 25px; padding-bottom: 35px;;
+    padding-top: 25px; padding-bottom: 55px;;
   }
 
 .buttonContainer{
@@ -47,7 +57,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-family: "DM Serif Display", serif;
     font-weight: 20;
     font-style:normal;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     display: block;
     text-decoration: none;
     background-color: #dedbd3;
