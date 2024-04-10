@@ -13,6 +13,29 @@ Hello source peeker :D */
     height: 7%;
 }
 
+.pageHeader{
+    display: flex; /*display in a line*/
+    justify-content: center;
+    margin-bottom: -25px; /*dont need too much space between elements */
+}
+
+.header-buttons{
+    padding-left: 50px; padding-right:50px; padding-top: 7px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 20;
+    font-style:oblique;
+    color: 303e14;
+    letter-spacing: 3px;
+    font-size: 1.3vw; /*makes the text responsive to screen size*/
+    text-align: center;
+    display: block;
+}
+
+.nav-bar-line{
+    border-top: 1.3px solid #303e14;
+}
+
+/* applies to all pages */
 body{
     background-color: #dedbd3;
 }
@@ -23,6 +46,7 @@ body{
 /* From this point on, all class or id name written in camel case denote a class that
 covers more than one element. If written with a dash, it is only one element */
 
+/* index page styling */
 #main-title{
     color: #303e14;
     font-family: "DM Serif Display", serif;
@@ -77,5 +101,14 @@ covers more than one element. If written with a dash, it is only one element */
     text-align: center;
 }
 
+/* history page styling */
+.historyAdvancer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
 
-
+.history-jump{
+    padding-left: 40px; padding-right: 40px;
+}
