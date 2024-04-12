@@ -102,13 +102,65 @@ covers more than one element. If written with a dash, it is only one element */
 }
 
 /* history page styling */
+
+.history-title{
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 8vw; /* size is responsive to screen size */
+    text-align: center;
+}
+.history-small-title{
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 3vw;
+}
+
+#history-intro{
+    text-align: center;
+}
 .historyAdvancer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 .history-jump{
     padding-left: 40px; padding-right: 40px;
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2vw; /* size is responsive to screen size */
+    transition: color 0.36s;
 }
+
+.history-jump:hover {
+    color: #DC7F93; 
+  }
+
+/* pick up here */
+/* .pre-colonial-section{
+    flex-direction: row;
+} */
+
+.history-paragraph{
+    color: #303e14;
+    font-family: "DM Serif Display", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+.history-imgs{
+    max-width: 50%;
+}
+
+ /* not working */
+/* .history-arrows{
+    border-color: #7A0008;
+    border-radius: 30px;
+} */
