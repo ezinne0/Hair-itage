@@ -1,10 +1,10 @@
 /* Author: Ezinne Okonkwo
 Last Updated: 4/8/24
 Hello source peeker :D */
-#homeLogo{
+/* #homeLogo{
     cursor: pointer;
     width: 11%;
-}
+} */
 
 #menu{
     position: fixed;
@@ -54,6 +54,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-style: normal;
     font-size: 13vw; /* size is responsive to screen size */
     text-align: center;
+    padding-top: 110px;
 }
 
 #animatedText {
@@ -113,8 +114,8 @@ covers more than one element. If written with a dash, it is only one element */
 }
 .history-small-title{
     color: #303e14;
-    font-family: "DM Serif Display", serif;
-    font-weight: 10;
+    font-family: "Laila", serif;
+    font-weight: 1000;
     font-style: normal;
     font-size: 3vw;
 }
@@ -122,10 +123,10 @@ covers more than one element. If written with a dash, it is only one element */
 #history-intro{
     text-align: center;
     color: #303e14;
-    font-family: "DM Serif Display", serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 1.7vw;
     padding-left:50px; padding-right: 40px; padding-top: 50px; padding-bottom:40px;
 }
 
@@ -141,12 +142,13 @@ covers more than one element. If written with a dash, it is only one element */
     font-family: "DM Serif Display", serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 2vw; /* size is responsive to screen size */
+    font-size: 2.3vw; /* size is responsive to screen size */
     transition: color 0.36s;
 }
 
 .history-jump:hover {
     color: #DC7F93; 
+    cursor: pointer;
   }
 
 /* pick up here */
@@ -156,17 +158,19 @@ covers more than one element. If written with a dash, it is only one element */
 
 .history-paragraph{
     color: #303e14;
-    font-family: "DM Serif Display", serif;
-    font-weight: 200;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.5vw;
     flex: 50%;
-    padding: 40px
+    padding-right: 40px; padding-left: 40px; 
+    
 }
 
 .pre-colonial-section{
     display:flex;
     width: 100%;
+    margin: 4px;
 }
 
 .during-colonialism-section{
@@ -175,9 +179,14 @@ covers more than one element. If written with a dash, it is only one element */
     width: 100%;
 }
 
+.modern-day-section{
+    display:flex;
+    width: 100%;
+}
+
 .history-imgs{
     max-width: 60%;
-    padding: 30px;
+    padding: 20px;
 }
 
 .history-imgs-div{ /*not sure if this is necessary or nah LOL */
@@ -185,28 +194,26 @@ covers more than one element. If written with a dash, it is only one element */
 }
 
 #pre-c-imgs{ /* parent */
+   min-width: 30%;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+
 }
 
-#pre-c-img1{ /* child 1 */
-
-    top: 400px;
-    left:400px;
+#pre-c-img1{
+    max-width: 80%;
+    max-height: 80%
+}
+.pre-c-imgs23-div{
+    display:flex
 }
 
-#pre-c-img2{ /* child 2 */
-
-    top: 400px;
-    left:400px;
+#pre-c-img2{
+    max-width: 100%;
+    max-height: 50%
 }
 
-
-
-
- /* not working */
-/* .history-arrows{
-    border-color: #7A0008;
-    border-radius: 30px;
-} */
+#pre-c-img3{
+    max-width: 100%;
+    max-height: 50%
+}
