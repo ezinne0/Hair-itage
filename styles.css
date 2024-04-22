@@ -20,13 +20,13 @@ Hello source peeker :D */
 }
 
 .header-buttons{
-    padding-left: 50px; padding-right:50px; padding-top: 7px;
+    padding-left: 50px; padding-right:50px; padding-top: 15px; padding-bottom: 3px;
     font-family: "DM Serif Display", serif;
     font-weight: 20;
     font-style:oblique;
     color: #3C4D19;
     letter-spacing: 3px;
-    font-size: 1.3vw; /*makes the text responsive to screen size*/
+    font-size: 1.6vw; /*makes the text responsive to screen size*/
     text-align: center;
     display: block;
     text-decoration: none;
@@ -117,7 +117,7 @@ covers more than one element. If written with a dash, it is only one element */
 
 /* history page styling */
 
-.history-title{
+.history-title, .def-title{
     color: #3C4D19;
     font-family: "DM Serif Display", serif;
     font-weight: 500;
@@ -125,6 +125,13 @@ covers more than one element. If written with a dash, it is only one element */
     font-size: 8vw; /* size is responsive to screen size */
     text-align: center;
 }
+
+.flower-text{
+    text-align: center;
+    color:#3C4D19;
+    font-size:1.75vw;
+}
+
 .history-small-title{
     color: #3C4D19;
     font-family: "Laila", serif;
@@ -231,9 +238,17 @@ covers more than one element. If written with a dash, it is only one element */
 #mainDivD{
     padding-left: 35px;
 }
+
+.smallTitleDef{
+    font-size: 40px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    color:#3C4D19
+}
+
 .term{
     font-family: "Laila", serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: #3C4D19;
     
