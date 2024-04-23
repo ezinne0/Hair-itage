@@ -32,15 +32,22 @@ Hello source peeker :D */
     text-decoration: none;
 }
 
-
 .header-buttons:hover{
     text-decoration: underline;
     color:#3C4D19
 }
 
-.curr-page{
+#curr-page{
     font-weight:1000;
     color: #DC7F93;
+    padding-left: 50px; padding-right:50px; padding-top: 15px; padding-bottom: 3px;
+    font-family: "DM Serif Display", serif;
+    font-style:oblique;
+    letter-spacing: 3px;
+    font-size: 1.6vw; /*makes the text responsive to screen size*/
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
 
 .nav-bar-line{
@@ -90,6 +97,13 @@ covers more than one element. If written with a dash, it is only one element */
     padding-bottom: 30px;
 }
 
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .buttonContainer {
+      display: block; /* Stack items vertically on smaller screens */
+    }
+  }
+
 .button{
     color:#3C4D19;
     font-family: "DM Serif Display", serif;
@@ -128,7 +142,7 @@ covers more than one element. If written with a dash, it is only one element */
 
 .flower-text{
     text-align: center;
-    color:#3C4D19;
+    color:#748255;
     font-size:1.75vw;
 }
 
@@ -154,6 +168,7 @@ covers more than one element. If written with a dash, it is only one element */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 40px; padding-top:30px;
 }
 
 .history-jump{
@@ -164,14 +179,27 @@ covers more than one element. If written with a dash, it is only one element */
     font-style: normal;
     font-size: 2.3vw; /* size is responsive to screen size */
     transition: color 0.36s;
-    
+    text-decoration: none;
 }
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .historyAdvancer {
+      display:grid; /* Stack items vertically on smaller screens */
+    }
+  }
+  
+  /* @media only screen and (max-width: 600px) {
+    .arrow-img {
+      content: url("assets/historyimg1.jpg"); /* Change the arrow image for smaller screens */
+    
 
 .history-jump:hover {
     color: #DC7F93; 
     cursor: pointer;
   }
 
+  
 .history-paragraph{
     color: #3C4D19;
     font-family: "Nunito", sans-serif;
@@ -199,6 +227,13 @@ covers more than one element. If written with a dash, it is only one element */
     width: 100%;
 }
 
+.impt{
+    color:#748255;
+    font-weight: 700;
+    font-family: "Laila", serif;
+    font-size: 2.75vw;
+
+}
 .history-imgs{
     max-width: 60%;
     padding: 20px;
@@ -243,7 +278,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-size: 40px;
     font-family: "DM Serif Display", serif;
     font-weight: 600;
-    color:#3C4D19
+    color:#3C4D19;
 }
 
 .term{
@@ -251,6 +286,8 @@ covers more than one element. If written with a dash, it is only one element */
     font-size: 25px;
     font-weight: 600;
     color: #3C4D19;
+    text-decoration: underline;
+    text-decoration-color: #748255;
     
 }
 

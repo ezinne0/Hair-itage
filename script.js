@@ -37,3 +37,19 @@ class MyHeader extends HTMLElement {
 }
 // custom element: if I want to change it, only have to do so in one file
 customElements.define('my-header', MyHeader)
+
+
+//change arrow directin if on smaller screen
+
+// window.addEventListener('resize', function() {
+//   const historyArrows = document.querySelectorAll('.history-arrows');
+//   if (window.innerWidth <= 600) {
+//     historyArrows.forEach(function(img) {
+//       img.src = 'assets/historyimg1.jpg';
+//     });
+//   } else {
+//     historyArrows.forEach(function(img) {
+//       img.src = 'assets/right-arrow.png';
+//     });
+//   }
+// });
