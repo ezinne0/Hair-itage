@@ -125,13 +125,13 @@ covers more than one element. If written with a dash, it is only one element */
     color: #EDECE8; 
   }
 
-.copyright-label{
+/* .copyright-label{
     text-align: center;
-}
+} */
 
 /* history page styling */
 
-.history-title, .def-title{
+.history-title, .def-title, .edu-title{
     color: #3C4D19;
     font-family: "DM Serif Display", serif;
     font-weight: 500;
@@ -301,3 +301,41 @@ covers more than one element. If written with a dash, it is only one element */
 .termContainer{
     padding-bottom: 20px;
 }
+
+/* education folder styling */
+.eduButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.edu-button{
+    color:#3C4D19;
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 1.75vw;
+    font-style: italic;
+    display: block;
+    text-decoration: none;
+    background-color: #dedbd3;
+    border: 2px solid #3C4D19;
+    border-radius: 30px;
+    transition: background-color 0.5s, color 0.5s; /* how long it takes colors to change+revert when hovered over*/
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.edu-button:hover {
+    background-color: #3C4D19;
+    color: #EDECE8; 
+  }
+
+#curr-edu{
+    background-color: #3C4D19;
+    color: #EDECE8; 
+}
+/* legislation */
+
