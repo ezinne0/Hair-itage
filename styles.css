@@ -1,5 +1,5 @@
 /* Author: Ezinne Okonkwo
-Last Updated: 4/8/24
+Last Updated: 4/24/24
 Hello source peeker :D */
 /* #homeLogo{
     cursor: pointer;
@@ -51,8 +51,7 @@ Hello source peeker :D */
 }
 
 .nav-bar-line{
-    border-top: 1.3px soli
-    d #3C4D19;
+    border-top: 1.3px solid #3C4D19;
 }
 
 /* applies to all pages */
@@ -339,3 +338,61 @@ covers more than one element. If written with a dash, it is only one element */
 }
 /* legislation */
 
+#legisMainDiv{
+    display: flex;
+    padding-top: 40px;
+    background-color: #748255;
+}
+
+.legisDiv1{
+    flex:3.5; /*even spacing*/
+    padding-left:30px; padding-right:40px;
+}
+
+.legisDiv2{
+    flex:6.5;
+    padding-left:30px; padding-right:40px;
+}
+
+.event-title{
+    color: #EDECE8;
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 2.75vw;
+}
+.date{
+    color:#EDECE8;
+    font-family: "Laila", sans-serif;
+    font-weight: bold;
+}
+.explanation{
+    color:#EDECE8;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+.timeline {
+    border-left: 1px solid #dedbd3;
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+  }
+  
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .timeline-item:after {
+    background-color: #EDECE8;
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
