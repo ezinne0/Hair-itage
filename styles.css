@@ -130,7 +130,7 @@ covers more than one element. If written with a dash, it is only one element */
 
 /* history page styling */
 
-.history-title, .def-title, .edu-title{
+.history-title, .def-title{
     color: #3C4D19;
     font-family: "DM Serif Display", serif;
     font-weight: 500;
@@ -338,10 +338,26 @@ covers more than one element. If written with a dash, it is only one element */
 }
 /* legislation */
 
+.eduBody{
+    background-color: #748255;
+}
+.edu-nav{
+    color:#EDECE8;
+}
+
+.edu-title{
+    color: #EDECE8;
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8vw; /* size is responsive to screen size */
+    text-align: center;
+}
+
 #legisMainDiv{
     display: flex;
     padding-top: 40px;
-    background-color: #748255;
+
 }
 
 .legisDiv1{
