@@ -178,7 +178,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-style: normal;
     font-size: 2.3vw; /* size is responsive to screen size */
     transition: color 0.36s;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Media query for smaller screens */
@@ -370,6 +370,35 @@ covers more than one element. If written with a dash, it is only one element */
     padding-left:30px; padding-right:40px;
 }
 
+.legis-quote{
+    font-family: "DM Serif Display", serif;
+    color:#EDECE8;
+    font-weight: 100;
+    font-size:34px ;
+    padding-bottom: 30px; padding-top:55px;
+}
+
+.legis-blurb{
+    font-family: "Laila", sans-serif;
+    font-weight:400;
+    color:#EDECE8;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.book-title{
+    text-decoration: underline;
+}
+
+#special-link{
+    text-decoration: none;
+    color:#EDECE8
+}
+
+#special-link:hover{
+    color:#DC7F93
+
+}
 .event-title{
     color: #EDECE8;
     font-family: "DM Serif Display", serif;
@@ -381,11 +410,13 @@ covers more than one element. If written with a dash, it is only one element */
     color:#EDECE8;
     font-family: "Laila", sans-serif;
     font-weight: bold;
+    font-size: 17px;
 }
 .explanation{
     color:#EDECE8;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .timeline {
@@ -412,3 +443,36 @@ covers more than one element. If written with a dash, it is only one element */
     width: 11px;
     content: "";
   }
+
+/* studies */
+
+#mainDiv-s{
+    padding: 40px;
+}
+
+.study-items{
+    padding: 20px;
+}
+.study-title{
+    color: #EDECE8;
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 2.75vw;
+    text-decoration: underline #3C4D19;
+}
+
+.explanation-s{
+    color:#EDECE8;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+}
+.special-links{
+    color:#EDECE8;
+    text-decoration: underline #3C4D19;
+}
+
+.special-links:hover{
+    color: #EDECE8;
+}
