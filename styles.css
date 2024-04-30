@@ -209,10 +209,19 @@ covers more than one element. If written with a dash, it is only one element */
     padding-right: 40px; padding-left: 40px; 
 }
 
+.special-links-h{
+    color:#3C4D19;
+    text-decoration: underline #748255 2px;
+}
+
+.special-links-h:hover{
+    color:#3C4D19;
+}
+
 .pre-colonial-section{
     display:flex;
     width: 100%;
-    margin: 4px;
+    /* margin: 4px; */
 }
 
 .during-colonialism-section{
@@ -243,7 +252,7 @@ covers more than one element. If written with a dash, it is only one element */
 }
 
 #pre-c-imgs{ /* parent */
-   min-width: 30%;
+    min-width: 30%;
     display: flex;
     flex-direction: row;
 
@@ -490,7 +499,7 @@ covers more than one element. If written with a dash, it is only one element */
     color:#EDECE8;
     text-decoration: underline #3C4D19;
 }
-.movie-title:hover{
+.m-title:hover{
     color: #EDECE8;
 }
 .m-sum{
