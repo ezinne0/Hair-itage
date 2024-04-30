@@ -383,7 +383,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-weight:400;
     color:#EDECE8;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .book-title{
@@ -404,7 +404,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-family: "DM Serif Display", serif;
     font-weight: bold;
     font-style:normal;
-    font-size: 2.75vw;
+    font-size: 3vw;
 }
 .date{
     color:#EDECE8;
@@ -416,7 +416,7 @@ covers more than one element. If written with a dash, it is only one element */
     color:#EDECE8;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .timeline {
@@ -447,7 +447,7 @@ covers more than one element. If written with a dash, it is only one element */
 /* studies */
 
 #mainDiv-s{
-    padding: 40px;
+    padding: 10px;
 }
 
 .study-items{
@@ -475,4 +475,40 @@ covers more than one element. If written with a dash, it is only one element */
 
 .special-links:hover{
     color: #EDECE8;
+}
+
+/* media */
+
+#mainDiv-m{
+    padding: 30px;
+}
+
+.m-title{
+    font-family: "DM Serif Display", serif;
+    font-style:normal;
+    font-size: 2.85vw;
+    color:#EDECE8;
+    text-decoration: underline #3C4D19;
+}
+.movie-title:hover{
+    color: #EDECE8;
+}
+.m-sum{
+    color:#EDECE8;
+    font-family: "Laila", sans-serif;
+    font-weight: 400;
+    font-size: 21px; 
+}
+
+.movies{
+    display: grid;
+    gap: 20px;
+}
+
+.main-title-m{
+    font-family: "DM Serif Display", serif;
+    font-weight:700;
+    font-style:normal;
+    font-size: 3.5vw;
+    color:#EDECE8;
 }
