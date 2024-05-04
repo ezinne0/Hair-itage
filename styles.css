@@ -17,6 +17,7 @@ Hello source peeker :D */
     display: flex; /*display in a line*/
     justify-content: center;
     margin-bottom: -25px; /*dont need too much space between elements */
+    padding-bottom: 20px;
 }
 
 .header-buttons{
@@ -30,11 +31,50 @@ Hello source peeker :D */
     text-align: center;
     display: block;
     text-decoration: none;
+    position: relative; /* Required for positioning pseudo-element */
 }
 
-.header-buttons:hover{
-    text-decoration: underline;
-    color:#3C4D19
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 414px) { /* iPhone 12 max-width */
+    .header-buttons {
+      font-size: 14px;
+    }
+  }
+
+
+.eduBody .header-buttons:hover{
+    /* text-decoration: underline; */
+    color: #EDECE8;
+    
+}
+
+.defBody .header-buttons:hover{
+    /* text-decoration: underline; */
+    color: #3C4D19;
+}
+
+.histBody .header-buttons:hover{
+    /* text-decoration: underline; */
+    color: #3C4D19;
+}
+
+
+
+.header-buttons::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position relative to parent */
+    bottom: 0; /* Adjust to align with text */
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Move back half the width */
+    width: 0; /* Start with no width */
+    height: 2px; /* Adjust thickness of underline */
+    background-color: #3C4D19; /* Color of underline */
+    transition: width 0.5s; /* Transition width */
+}
+
+.header-buttons:hover::before {
+    width: calc(100% - 70px); /* Adjust to accommodate text length */
 }
 
 #curr-page{
@@ -48,10 +88,6 @@ Hello source peeker :D */
     text-align: center;
     display: block;
     text-decoration: none;
-}
-
-.nav-bar-line{
-    border-top: 1.3px solid #3C4D19;
 }
 
 /* applies to all pages */
@@ -401,13 +437,15 @@ covers more than one element. If written with a dash, it is only one element */
 
 #special-link{
     text-decoration: none;
-    color:#EDECE8
+    color:#EDECE8;
+    transition: color 0.5s, text-decoration 0.75s;
+    
 }
 
 #special-link:hover{
-    color:#DC7F93
-
+    color:#DC7F93;
 }
+
 .event-title{
     color: #EDECE8;
     font-family: "DM Serif Display", serif;
