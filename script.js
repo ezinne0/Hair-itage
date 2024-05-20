@@ -1,3 +1,5 @@
+// animated text on home page
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOMContentLoaded event fired");
     const phrases = ["Celebrating Black culture.", "Understanding our hair's history.", "Learning about our roots."];
@@ -19,24 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 3000); // Change text every 3 seconds
   });
 
-// custom header for pages
-class MyHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-      <header>
-        <div class="pageHeader">
-          <div class="header-buttons"><p>HOME</p></div>
-          <div class="header-buttons"><p>HISTORY</p></div>
-          <div class="header-buttons"><p>EDUCATION</p></div>
-          <div class="header-buttons"><p>FUN</p></div>
-        </div>
-        <div><hr class="nav-bar-line"></div>
-      </header>
-    `;
-  }
-}
-// custom element: if I want to change it, only have to do so in one file
-customElements.define('my-header', MyHeader)
 
 
 //change arrow directin if on smaller screen
