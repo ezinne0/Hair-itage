@@ -1,12 +1,12 @@
 /* Author: Ezinne Okonkwo
-Last Updated: 7/10/24
+Last Updated: 9/2/24
 Hello source peeker :D */
 /* #homeLogo{
     cursor: pointer;
     width: 11%;
 } */
 
-/* code for hiding site when phone is in portrait mode */
+/* code for hiding site when phone is in portrait mode HOME SCREEN ONLY*/
 .portrait-only {
     display: none; /* Initially hide in landscape */
 }
@@ -20,9 +20,38 @@ Hello source peeker :D */
         font-style:oblique;
         color: #3C4D19;
         text-align: center;
-        padding-top: 410px;
-        padding-left: 40px; padding-right: 40px;
-        
+
+        /* Centering the element */
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center; /* Vertical centering */
+        height: 100vh; /* Full viewport height */
+    }
+    .normal-layout {
+        display: none; /* Hide normal layout in portrait */
+    }
+}
+
+/* code for hiding site when phone is in portrait mode ALL OTHER PAGES (WITH NAV BAR) */
+.portrait-only-plus {
+    display: none; /* Initially hide in landscape */
+}
+/* Media query for portrait orientation */
+@media (orientation: portrait) {
+    .portrait-only-plus {
+        display: block; /* Show in portrait */
+        font-family: "DM Serif Display", serif;
+        font-weight: 20;
+        font-size: 6vw;
+        font-style:oblique;
+        color: #3C4D19;
+        text-align: center;
+
+        /* Centering the element */
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center; /* Vertical centering */
+        height: 100vh; /* Full viewport height */
     }
     .normal-layout {
         display: none; /* Hide normal layout in portrait */
@@ -155,12 +184,18 @@ covers more than one element. If written with a dash, it is only one element */
     padding-bottom: 30px;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 600px) {
+/* Responsive (stacked layout) */
+@media (max-width: 768px) {
     .buttonContainer {
-      display: block; /* Stack items vertically on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
-  }
+
+    .button {
+        margin-bottom: 1rem;
+        width: 30%; /* Optional: to make buttons take the full width */
+    }
+}
 
 .button{
     color:#3C4D19;
@@ -176,6 +211,7 @@ covers more than one element. If written with a dash, it is only one element */
     transition: background-color 0.5s, color 0.5s; /* how long it takes colors to change+revert when hovered over*/
     text-align: center;
     padding: 10px 30px;
+    margin: 0px 0; /* Reduce vertical space between buttons */
 }
 
 .button:hover {
