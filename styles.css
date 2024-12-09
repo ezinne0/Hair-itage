@@ -65,6 +65,11 @@ Hello source peeker :D */
     height: 7%;
 }
 
+#animatedText{
+    -webkit-text-stroke: 0.5px white; /* width and color */
+    font-size: 90px;
+}
+
 .pageHeader{
     display: flex; /*display in a line*/
     justify-content: center;
@@ -161,7 +166,7 @@ covers more than one element. If written with a dash, it is only one element */
     font-style: normal;
     font-size: 13vw; /* size is responsive to screen size */
     text-align: center;
-    padding-top: 110px;
+    padding-top: 32px;
 }
 
 #animatedText {
@@ -173,7 +178,7 @@ covers more than one element. If written with a dash, it is only one element */
     text-align: center;
     opacity: 1;
     transition: opacity 1s ease-in-out;
-    padding-top: 25px; padding-bottom: 55px;;
+    padding-top: 15px; padding-bottom: 35px;;
   }
 
 .buttonContainer{
